@@ -14,4 +14,4 @@ Article model -
 - The front-end: Listing articles 
 - The front-end: Creating articles 
 - The front-end: Error messages and flash helper (hash)
-- The front-end: Edit and update existing articles
+- The front-end: Updating articles functionality
