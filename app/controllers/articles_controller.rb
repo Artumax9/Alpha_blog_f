@@ -10,13 +10,17 @@ class ArticlesController < ApplicationController
   end
 
   def new
-  
+    #for the first time to load the new template
+    @article = Article.new  
   end
 
   def create 
     @article = Article.new(params.require(:article).permit(:title, :description))
-    @article.save  
-    redirect_to (@article)
+    if @article.save  
+      flash[:notice] = "The new article was suscesfully created."
+      redirect_to (@article)
+    else
+      render 'new'
+    end
   end
-
 end
