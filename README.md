@@ -17,3 +17,7 @@ Article model -
 - The front-end: Updating articles functionality
 - The front-end: Destroying (deleting) articles
 - The front-end: Layout links
+- DRY code: Dont Repeat Yourself
+    re-factoring
+    extract away the redundancies in code
+
